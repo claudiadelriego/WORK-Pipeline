@@ -1,4 +1,4 @@
- import com.saucelabs.junit.ConcurrentParameterized;
+import com.saucelabs.junit.ConcurrentParameterized;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,9 +9,6 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.URL;
 import java.util.LinkedList;
-
-
-
 
 
     @RunWith(ConcurrentParameterized.class)
