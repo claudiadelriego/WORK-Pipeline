@@ -3,7 +3,8 @@
 node{
 
 stage 'checkout'
-   https://github.com/claudiadelriego/WORK-Pipeline.git'
+    git url: 'https://github.com/claudiadelriego/WORK-Pipeline.git'
+
 
 stage 'Build'
    echo 'DONE'
