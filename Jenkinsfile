@@ -10,7 +10,7 @@ stage 'Build'
    echo 'DONE'
 
 stage 'Build2'
-sh 'mvn test'
+sh 'mvn -test'
 
 
 }
