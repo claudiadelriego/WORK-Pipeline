@@ -23,8 +23,7 @@ agent any
 
     stage ('Build'){
       steps{
-          sh 'make'
-          junit '**/surefire-reports/*.xml'
+         echo "Ambiente: ${env.BUILD_ID} on ${env.JENKINS_URL}"
       }
     }
   }
