@@ -12,7 +12,8 @@ stage 'Build'
    echo 'DONE'
 
 stage 'Build2'
-sh 'mvn test'
+sh 'mvn -Dtest=SampleTest2 test'
+step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
 
 
 }
