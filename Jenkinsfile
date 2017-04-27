@@ -13,7 +13,7 @@ stage 'Build'
 
 stage 'Build2'
 sh 'mvn -Dtest=SampleTest2 test'
-step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
+
 
 
 }
