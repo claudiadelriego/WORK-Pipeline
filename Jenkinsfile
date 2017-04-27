@@ -1,9 +1,12 @@
 #!groovy
-pipeline {
-agent any
-   node{
+
+node{
    checkout scm
    }
+
+pipeline {
+agent any
+
 
    stages {
 
