@@ -1,13 +1,13 @@
 #!groovy
 pipeline {
 
-   node {
-       checkout scm
-    }
-
    agent any
 
    stages {
+
+   stage ('Checkout'){
+    checkout scm
+   }
 
     stage ('Build'){
       steps{
@@ -27,5 +27,4 @@ pipeline {
 
 }
 
-stage 'Build2'
- sh 'mvn -Dtest=SampleTest2 test'
+
