@@ -1,6 +1,6 @@
 #!groovy
 pipeline {
-
+agent any
    node{
    checkout scm
    }
