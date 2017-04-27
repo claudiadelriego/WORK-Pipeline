@@ -11,8 +11,14 @@ agent any
 
    stage ('Build0'){
      steps{
-   sh 'ls -la'
+        sh 'ls -la'
      }
+   }
+   stage ('Build1'){
+     steps{
+        sh 'mvn -Dtest=SampleTest2 test'
+     }
+
    }
 
     stage ('Build'){
