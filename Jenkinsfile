@@ -2,13 +2,11 @@
 pipeline {
 
    agent any
-
+   checkout scm
    stages {
 
    stage ('Build0'){
-   node{
-    checkout scm
-    }
+   sh 'ls -la'
    }
 
     stage ('Build'){
