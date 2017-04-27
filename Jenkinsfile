@@ -23,7 +23,7 @@ agent any
 
     stage ('Build'){
       steps{
-          sh 'make check || true'
+          sh 'make'
           junit '**/surefire-reports/*.xml'
       }
     }
