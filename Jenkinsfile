@@ -18,7 +18,7 @@ agent any
     stage ('Build'){
       steps{
           sh 'make check || true'
-          junit '**/target/*.xml'
+          junit '*/target/**.xml'
       }
     }
   }
