@@ -11,7 +11,9 @@ agent any
    stages {
 
    stage ('Build0'){
+     steps{
    sh 'ls -la'
+     }
    }
 
     stage ('Build'){
