@@ -4,7 +4,6 @@ node{
 
 stage 'checkout'
     checkout scm
-    #!git url: 'https://github.com/claudiadelriego/WORK-Pipeline.git'
 
 stage 'Build0'
 sh 'ls -la'
