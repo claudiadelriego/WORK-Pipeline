@@ -6,8 +6,9 @@ pipeline {
    stages {
 
    stage ('Build0'){
-   agent any
+   node{
     checkout scm
+    }
    }
 
     stage ('Build'){
