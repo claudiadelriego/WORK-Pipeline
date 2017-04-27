@@ -17,8 +17,8 @@ agent any
 
     stage ('Build'){
       steps{
-          sh 'make'
-          archiveArtifacts artifacts: '*/target/*.jar', fingerprint: true
+          sh 'make check || true'
+          junit '**/target/*.xml'
       }
     }
   }
