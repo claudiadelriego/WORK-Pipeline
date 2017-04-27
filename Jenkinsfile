@@ -7,7 +7,6 @@ node{
 pipeline {
 agent any
 
-
    stages {
 
    stage ('Build0'){
@@ -19,7 +18,7 @@ agent any
     stage ('Build'){
       steps{
           sh 'make'
-          archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
+          archiveArtifacts artifacts: '*/target/*.jar', fingerprint: true
       }
     }
   }
